@@ -21,7 +21,7 @@ class CreateCommentsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users');
 
             $table->unsignedInteger('publication_id');
-            $table->foreign('publication_id')->references('id')->on('publication');
+            $table->foreign('publication_id')->references('id')->on('publications');
             $table->timestamps();
         });
     }
